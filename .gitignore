@@ -1,0 +1,87 @@
+# ==============================================================================
+# Windows / C++ / CMake / Visual Studio .gitignore
+# ==============================================================================
+
+# Build Output Directories
+build/
+build*/
+bin/
+out/
+**/bin/
+**/x64/
+**/Debug/
+**/Release/
+**/RelWithDebInfo/
+**/MinSizeRel/
+cmake-build-*/
+
+# Compiled Executables, Libraries, and Object Files
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.exp
+*.obj
+*.o
+*.pch
+
+# Debug & Linker Files
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.ipdb
+*.iobj
+*.res
+
+# CMake Generated Files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeScripts/
+Testing/
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+__pycache__/
+
+# Visual Studio & MSVC
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.sln.docstates
+*.suo
+*.user
+*.userosv
+*.VC.db
+*.VC.opendb
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# CLion / JetBrains
+.idea/
+
+# Downloaded External Dependencies (downloaded via download_deps.ps1)
+external/imgui/
+external/glad/
+
+# Runtime Logs and CSV Exports
+logs/*.csv
+logs/*.log
+*.log
+!logs/.gitkeep
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
