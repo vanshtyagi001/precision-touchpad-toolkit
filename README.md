@@ -1,6 +1,30 @@
-# Touchpad Tracker
+<div align="center">
 
-A C++17 utility suite for Windows Precision Touchpads. Directly decodes raw HID input packets to provide low-level multi-touch tracking, gesture recognition, real-time GUI visualization, and background productivity shortcuts.
+# Precision Touchpad Toolkit
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" alt="Windows" width="48" height="48"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="48" height="48"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="CMake" width="48" height="48"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opengl/opengl-original.svg" alt="OpenGL" width="48" height="48"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio" width="48" height="48"/>
+</p>
+
+A low-level C++17 utility suite for Windows Precision Touchpads. Directly decodes raw HID input packets for multi-touch tracking, gesture recognition, real-time GUI visualization, and background productivity shortcuts.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"/>
+  <img src="https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++17"/>
+  <img src="https://img.shields.io/badge/Build-CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake"/>
+  <img src="https://img.shields.io/badge/Graphics-OpenGL-5586A4?style=for-the-badge&logo=opengl&logoColor=white" alt="OpenGL"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT"/>
+</p>
+
+</div>
 
 ---
 
@@ -30,6 +54,18 @@ A C++17 utility suite for Windows Precision Touchpads. Directly decodes raw HID 
   - Bottom-Left: Volume Down
   - Bottom-Right: Volume Up
 - Right-edge vertical scroll zone with velocity smoothing and automatic edge scrolling.
+
+---
+
+## Tech Stack & Architecture
+
+| Technology | Logo | Role |
+|---|:---:|---|
+| **Windows APIs** | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" width="32" height="32" alt="Windows"/> | Hardware digitizer discovery (`setupapi.lib`) and packet decoding (`hid.lib`, `user32.lib`) |
+| **C++17** | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="32" height="32" alt="C++"/> | Low-latency state machine, gesture analysis, and event dispatch |
+| **CMake** | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" width="32" height="32" alt="CMake"/> | Cross-generator build configuration and compilation workflow |
+| **OpenGL & GLAD** | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opengl/opengl-original.svg" width="32" height="32" alt="OpenGL"/> | Hardware-accelerated canvas rendering at 60+ FPS |
+| **Visual Studio** | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" width="32" height="32" alt="Visual Studio"/> | MSVC compiler toolchain and native debugging |
 
 ---
 
